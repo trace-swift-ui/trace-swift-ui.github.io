@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'New York Italic';
+    src: url('https://login.trace.zip/storage/v1/object/public/assets/fonts/FontsFree-Net-NewYorkSmallRegularItalic.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-ny {
+    font-family: 'New York', sans-serif;
+}

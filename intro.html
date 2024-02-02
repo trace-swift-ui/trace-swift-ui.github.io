@@ -1,5 +1,228 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Grid with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+</head>
 
-asdasd
+<body class="flex items-center justify-center min-h-screen bg-white">
+    <div class="grid grid-cols-1 gap-4 py-24">
 
-</html> 
+        <div class="w-full max-w-xl p-5 bg-white text-2xl font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/icon.png" class="h-24 w-24"/>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p class="">Getting started with SwiftUI.</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>There are over 2 billion iOS devices out there in the world. Making an app that touches everyone is the most impactful thing you can do.</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>This tutorial is designed to help you get started with making your own app in SwiftUI</p>
+        </div>
+
+        <div class="flex justify-center">
+            <hr class="my-8 w-1/2 border-gray-200 border-2" />
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-xl font-semibold text-center text-gray-400">
+            <p class="">GOAL</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p class="text-ny">Let’s make a simple, to-do list app</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/todo.png" class=""/>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>By the end of this tutorial, you’ll have a running to-do list app on your phone</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>You’ll have learned how to create a project, write basic SwiftUI code, use UI elements like lists, text, textfields and switches. You’ll also have learned function calling.</p>
+        </div>
+
+        <div class="flex justify-center">
+            <hr class="my-8 w-1/2 border-gray-200 border-2" />
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-xl font-semibold text-center text-gray-400">
+            <p class="">STEP 1</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p class="text-ny">Start by setting up your xcode project</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>To create an app, click on Create a new Xcode project. Then, select Single-View app. After, you have to set the project settings. The identifier is typically your domain name in reverse. Finally, make sure to check Use SwiftUI.</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/project-1.png" class=""/>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>After you finish setting up your app, you'll be greeted with the SwiftUI code editor alongside the Preview. Make sure to click on Resume at the top right to see the results in real-time. You can also hide the Left navigation and right inspector by clicking on the top right buttons.</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/project-2.png" class=""/>
+        </div>
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openModalBtn">
+            <img src="img/plus.png" class="w-11 h-11"/>
+            <span class="text-xl text-black">More About XCode</span>
+        </button>
+
+        <div class="flex justify-center">
+            <hr class="my-8 w-1/2 border-gray-200 border-2" />
+        </div>
+
+        <div class="w-full max-w-xlp-5 bg-white text-xl font-semibold text-center text-gray-400">
+            <p class="">STEP 2</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p class="text-ny">Create a list of Tasks</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Start by creating a reminder object (or data model) where each Reminder task has a unique identifier, title and a way to store if the task was completed or not. </p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/code-placeholder.png" class=""/>
+        </div>
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+            <img src="img/plus.png" class="w-11 h-11"/>
+            <span class="text-xl text-black">More About Data Models</span>
+        </button>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Let’s add some placeholder Reminders </p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/code-placeholder.png" class=""/>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Let’s build the list along with the UI of each item in the list</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/code-placeholder.png" class=""/>
+        </div>
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+            <img src="img/plus.png" class="w-11 h-11"/>
+            <span class="text-xl text-black">More about SwiftUI Elements</span>
+        </button>
+
+        <div class="flex justify-center">
+            <hr class="my-8 w-1/2 border-gray-200 border-2" />
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-xl font-semibold text-center text-gray-400">
+            <p class="">STEP 3</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p class="text-ny">Create the ability to add a task</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Let’s add a button to add a new task and also the ability to create a new task by using functions</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/code-placeholder.png" class=""/>
+        </div>
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+            <img src="img/plus.png" class="w-11 h-11"/>
+            <span class="text-xl text-black">More about Triggering Actions</span>
+        </button>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>When a new task is added, a textview is displayed</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/code-placeholder.png" class=""/>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Now let’s write the code to delete a task</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+            <img src="img/code-placeholder.png" class=""/>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Now let’s run this on simulator and device</p>
+        </div>
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+            <img src="img/plus.png" class="w-11 h-11"/>
+            <span class="text-xl text-black">Setting up developer account</span>
+        </button>
+
+        <div class="flex justify-center">
+            <hr class="my-8 w-1/2 border-gray-200 border-2" />
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-xl font-semibold text-center text-gray-400">
+            <p class="">FINISH</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p class="text-ny">Congrats!</p>
+        </div>
+
+    </div>
+
+
+
+    
+    <div id="myModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+        <!-- Modal content -->
+        <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
+            <!-- Close button in the top left corner -->
+            <button class="close-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
+    
+            <div class="grid grid-cols-1 gap-4 py-24">
+                <div class="w-full max-w-md p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                    <img src="img/code-placeholder.png" class=""/>
+                </div>
+    
+                <div class="w-full max-w-md p-5 bg-white text-3xl font-semibold text-center">
+                    <p>There are over 2 billion iOS devices out there in the world. Making an app that touches everyone is the most impactful thing you can do.</p>
+                </div>
+    
+                <div class="w-full max-w-md p-5 bg-white text-3xl font-semibold text-center">
+                    <p>This tutorial is designed to help you get started with making your own app in SwiftUI</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
