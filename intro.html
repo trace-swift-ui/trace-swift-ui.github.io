@@ -16,15 +16,11 @@
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p class="">Getting started with SwiftUI.</p>
+            <p>There are over 2 billion iOS devices out there in the world. By learning SwiftUI, you can build new apps that reach billions of people.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>There are over 2 billion iOS devices out there in the world. Making an app that touches everyone is the most impactful thing you can do.</p>
-        </div>
-
-        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>This tutorial is designed to help you get started with making your own app in SwiftUI</p>
+            <p>This tutorial is designed to help you get started with making your own app in SwiftUI.</p>
         </div>
 
         <div class="flex justify-center">
@@ -36,7 +32,7 @@
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p class="text-ny">Let’s make a simple, to-do list app</p>
+            <p class="text-ny">Build a simple to-do list app</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
@@ -44,27 +40,32 @@
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>By the end of this tutorial, you’ll have a running to-do list app on your phone</p>
+            <p>By the end of this tutorial, you’ll have built a simple to-do list app using Swift UI.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>You’ll have learned how to create a project, write basic SwiftUI code, use UI elements like lists, text, textfields and switches. You’ll also have learned function calling.</p>
+            <p>You’ll know how to create a project, write basic SwiftUI code, use UI elements like lists, text, textfields, switches and call functions to perform actions..</p>
         </div>
 
         <div class="flex justify-center">
             <hr class="my-8 w-1/2 border-gray-200 border-2" />
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white text-xl font-semibold text-center text-gray-400">
+
+
+
+
+
+        <div class="w-full max-w-xl p-5 bg-white text-xl font-semibold text-center text-gray-500">
             <p class="">STEP 1</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p class="text-ny">Start by setting up your xcode project</p>
+            <p class="text-ny">Create a new Xcode Project</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>To create an app, click on Create a new Xcode project. Then, select Single-View app. After, you have to set the project settings. The identifier is typically your domain name in reverse. Finally, make sure to check Use SwiftUI.</p>
+            <p>Create a new Xcode project. Select the single view app option. Fill in the project details like name, etc. The identifier is typically your domain name in reverse. Make sure you select SwiftUI checkmark options.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
@@ -72,17 +73,72 @@
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>After you finish setting up your app, you'll be greeted with the SwiftUI code editor alongside the Preview. Make sure to click on Resume at the top right to see the results in real-time. You can also hide the Left navigation and right inspector by clicking on the top right buttons.</p>
+            <p>Once details are in place, you'll be greeted with the SwiftUI code editor alongside the Preview. Make sure to click on Resume at the top right to see the results in real-time. You can also toggle the Left navigation and right inspector by clicking on the top right buttons.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
             <img src="img/project-2.png" class=""/>
         </div>
 
-        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openModalBtn">
+
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openMoreAboutXcodeBtn">
             <img src="img/plus.png" class="w-11 h-11"/>
             <span class="text-xl text-black">More About XCode</span>
         </button>
+
+        <div id="moreAboutXcodeModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <!-- Modal content -->
+            <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
+                <!-- Close button in the top left corner -->
+                <button class="close-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
+        
+                <div class="grid grid-cols-1 gap-2 py-24">
+                    <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                        <img src="img/code-placeholder.png" class=""/>
+                    </div>
+        
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Xcode is an integrated development environment (IDE) created by Apple for developing software for macOS, iOS, watchOS, and tvOS. When it comes to making iOS apps with SwiftUI, think of Xcode as your all-in-one workshop where you can design, code, test, and debug your app. SwiftUI is a modern framework provided by Apple that allows developers to create user interfaces for their apps in a declarative way, which means you can build complex interfaces with less code and in a more understandable manner. </p>
+                    </div>
+                    
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Here’s how Xcode is used to make iOS apps via SwiftUI in super simple terms:</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>1. Starting a Project: You begin by opening Xcode and creating a new project. Xcode provides templates for different types of iOS apps, and you can select one that suits your needs. When setting up your project, you choose SwiftUI as the user interface option.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>2. Designing the Interface: With SwiftUI, you design your app’s interface using a syntax that describes what each part of your app should look like and how it should behave. Xcode includes a preview tool that shows you what your UI looks like in real-time as you code, without having to run the app on a simulator or device. This makes it easy to experiment with different designs and see the results immediately.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>3. Writing Code: Beyond the user interface, you use Swift, Apple’s programming language, to add functionality to your app. This includes everything from handling user interactions, such as taps and swipes, to fetching data from the internet and displaying it in your app. SwiftUI integrates closely with Swift, making it straightforward to bind your UI components to your app’s data and logic.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>4. Testing Your App: Xcode provides simulators for various models of iPhones, iPads, and other Apple devices. You can run your app in these simulators to test how it behaves on different devices. Xcode also supports real device testing, allowing you to install your app on your own iPhone or iPad to see how it works in a real-world scenario.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>5. Debugging: If something doesn’t work as expected, Xcode has powerful debugging tools to help you find and fix problems. You can set breakpoints in your code to pause execution and inspect the state of your app at various points, which helps in identifying what’s going wrong.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>6. Publishing: Once your app is ready and tested, Xcode assists in packaging and submitting your app to the App Store. Xcode handles the complexities of signing your app with the appropriate certificates and provisioning profiles required by Apple for distribution.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>In summary, Xcode is the workspace where you bring your iOS app to life using SwiftUI. It combines design and coding tools, simulators for testing, debugging utilities, and publishing capabilities into a single application, simplifying the entire process of app development from start to finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        
 
         <div class="flex justify-center">
             <hr class="my-8 w-1/2 border-gray-200 border-2" />
@@ -97,38 +153,159 @@
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>Start by creating a reminder object (or data model) where each Reminder task has a unique identifier, title and a way to store if the task was completed or not. </p>
+            <p>Start by creating a data model for your task task. Each task has a unique identifier, title and a boolean value to check if the task is complete.</p>
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-            <img src="img/code-placeholder.png" class=""/>
+
+        <div class="w-full max-w-2xl p-5 bg-white font-semibold text-left items-center flex justify-center flex-col">
+            <code class="bg-gray-200 px-16 py-5 rounded-xl">
+                struct Task: Identifiable, Hashable { <br/>
+                    &emsp;&emsp;var id = UUID() <br/>
+                    &emsp;&emsp;var title: String <br/>
+                    &emsp;&emsp;var isCompleted: Bool <br/>
+                } <br/>
+            </code>
+            <p class="font-xs mt-2 text-gray-500">* copy+paste this code anywhere at the top of bottom of your code.</p>
         </div>
 
-        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+
+
+
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openMoreAboutDataModelBtn">
             <img src="img/plus.png" class="w-11 h-11"/>
             <span class="text-xl text-black">More About Data Models</span>
         </button>
 
-        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
-            <p>Let’s add some placeholder Reminders </p>
+        <div id="moreAboutDataModelModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <!-- Modal content -->
+            <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
+                <!-- Close button in the top left corner -->
+                <button class="close-datamodal-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
+        
+                <div class="grid grid-cols-1 gap-2 py-24">
+                    <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                        <img src="img/code-placeholder.png" class=""/>
+                    </div>
+        
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>In SwiftUI, data models are structures that hold the app's data, and MVVM (Model-View-ViewModel) is a design pattern that organizes code into three components for clearer separation of concerns. The Model represents the app's data, the View displays the UI, and the ViewModel acts as a bridge between the Model and View, handling the logic to update the View when the data changes. SwiftUI's declarative syntax automatically updates the View when data in the ViewModel changes, thanks to data binding and state management tools like @State, @Binding, and @ObservedObject. This setup simplifies building dynamic and responsive apps, as developers focus on defining what the UI should do with given data, rather than managing the details of UI updates manually.</p>
+                    </div>
+                    
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Here’s how Xcode is used to make iOS apps via SwiftUI in super simple terms:</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>1. Starting a Project: You begin by opening Xcode and creating a new project. Xcode provides templates for different types of iOS apps, and you can select one that suits your needs. When setting up your project, you choose SwiftUI as the user interface option.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>2. Designing the Interface: With SwiftUI, you design your app’s interface using a syntax that describes what each part of your app should look like and how it should behave. Xcode includes a preview tool that shows you what your UI looks like in real-time as you code, without having to run the app on a simulator or device. This makes it easy to experiment with different designs and see the results immediately.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>3. Writing Code: Beyond the user interface, you use Swift, Apple’s programming language, to add functionality to your app. This includes everything from handling user interactions, such as taps and swipes, to fetching data from the internet and displaying it in your app. SwiftUI integrates closely with Swift, making it straightforward to bind your UI components to your app’s data and logic.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>4. Testing Your App: Xcode provides simulators for various models of iPhones, iPads, and other Apple devices. You can run your app in these simulators to test how it behaves on different devices. Xcode also supports real device testing, allowing you to install your app on your own iPhone or iPad to see how it works in a real-world scenario.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>5. Debugging: If something doesn’t work as expected, Xcode has powerful debugging tools to help you find and fix problems. You can set breakpoints in your code to pause execution and inspect the state of your app at various points, which helps in identifying what’s going wrong.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>6. Publishing: Once your app is ready and tested, Xcode assists in packaging and submitting your app to the App Store. Xcode handles the complexities of signing your app with the appropriate certificates and provisioning profiles required by Apple for distribution.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>In summary, Xcode is the workspace where you bring your iOS app to life using SwiftUI. It combines design and coding tools, simulators for testing, debugging utilities, and publishing capabilities into a single application, simplifying the entire process of app development from start to finish.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-            <img src="img/code-placeholder.png" class=""/>
+
+
+
+
+
+        <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
+            <p>Let’s add some placeholder Reminders to mimic tasks in the app.</p>
+        </div>
+
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-left items-center flex justify-center flex-col">
+            <code class="bg-gray-200 px-16 py-5 rounded-xl">
+            @State private var reminders: [Reminder] = [ <br/>
+            &emsp;&emsp;Reminder(title: "Buy groceries"), <br/>
+            &emsp;&emsp;Reminder(title: "Call John"), <br/>
+            &emsp;&emsp;Reminder(title: "Finish project report") <br/>
+            ]
+            </code>
+            <p class="font-xs mt-2 text-gray-500">* copy+paste this code anywhere at the top of bottom of your code.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
             <p>Let’s build the list along with the UI of each item in the list</p>
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-            <img src="img/code-placeholder.png" class=""/>
+        <div class="w-full max-w-2xl p-5 bg-white font-semibold text-left items-center flex justify-center flex-col">
+            <code class="bg-gray-200 px-16 py-5 rounded-xl">
+                struct Task: Identifiable, Hashable { <br/>
+                    &emsp;&emsp;var id = UUID() <br/>
+                    &emsp;&emsp;var title: String <br/>
+                    &emsp;&emsp;var isCompleted: Bool <br/>
+                } <br/>
+            </code>
+            <p class="font-xs mt-2 text-gray-500">* copy+paste this code at the top of your ContentView Struct.</p>
         </div>
 
-        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+
+
+
+
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openMoreAboutSwiftUIBtn">
             <img src="img/plus.png" class="w-11 h-11"/>
             <span class="text-xl text-black">More about SwiftUI Elements</span>
         </button>
+
+        <div id="moreAboutSwiftUIModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <!-- Modal content -->
+            <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
+                <!-- Close button in the top left corner -->
+                <button class="close-swiftui-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
+        
+                <div class="grid grid-cols-1 gap-2 py-24">
+                    <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                        <img src="img/code-placeholder.png" class=""/>
+                    </div>
+        
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>SwiftUI elements are simple components you use to build your app's user interface. For example, Text displays text, Button triggers actions, and Image shows pictures. You use these elements by declaring them in your code with specific properties.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>For instance, to create a button that says "Tap me," you would write:</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                        <img src="img/code-placeholder.png" class=""/>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>These elements can be styled and arranged with modifiers and layout containers like VStack (vertical stack) and HStack (horizontal stack), enabling you to build complex UIs efficiently.:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
         <div class="flex justify-center">
             <hr class="my-8 w-1/2 border-gray-200 border-2" />
@@ -146,39 +323,227 @@
             <p>Let’s add a button to add a new task and also the ability to create a new task by using functions</p>
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-            <img src="img/code-placeholder.png" class=""/>
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-left items-center flex justify-center flex-col">
+            <code class="bg-gray-200 px-16 py-5 rounded-xl">
+                NavigationView {
+                &emsp;&emsp;List {
+                &emsp;&emsp;&emsp;&emsp;ForEach($reminders) { $reminder in
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;HStack {
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Button(action: {
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;reminder.isCompleted.toggle()
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}) {
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Image(systemName: reminder.isCompleted ? "checkmark.circle.fill" : "circle")
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;.foregroundColor(.blue)
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;}
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;.buttonStyle(PlainButtonStyle()) 
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;TextField("Reminder", text: $reminder.title)
+                &emsp;&emsp;&emsp;&emsp;}
+                &emsp;&emsp;}
+                        .onDelete(perform: deleteReminder)
+                    }
+                    .navigationTitle("Reminders")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button(action: addReminder) {
+                                Image(systemName: "plus")
+                            }
+                        }
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            EditButton()
+                        }
+                    }
+                }
+            </code>
+            <p class="font-xs mt-2 text-gray-500">* copy+paste this code anywhere at the top of bottom of your code.</p>
         </div>
 
-        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+
+
+
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openMoreAboutActionsBtn">
             <img src="img/plus.png" class="w-11 h-11"/>
             <span class="text-xl text-black">More about Triggering Actions</span>
         </button>
+
+        <div id="moreAboutActionsModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <!-- Modal content -->
+            <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
+                <!-- Close button in the top left corner -->
+                <button class="close-actions-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
+        
+                <div class="grid grid-cols-1 gap-2 py-24">
+                    <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                        <img src="img/code-placeholder.png" class=""/>
+                    </div>
+        
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>In SwiftUI, methods are functions associated with instances of classes, structs, or enums. They can modify the instance's properties and provide functionality.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Here's a simplified explanation:</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Instance Methods</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Functions within a class, struct, or enum. They operate on the instance's properties.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Modifying Value Types</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>To modify properties of structs or enums within their methods, use mutating keyword.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Type Methods</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Called on the type itself, not an instance, using static or class (for inheritance).</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>SwiftUI Context</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Methods in SwiftUI views often interact with @State, @Binding, etc., to update the UI based on state changes.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Methods are crucial for encapsulating functionality in SwiftUI, allowing for dynamic UI updates.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
             <p>When a new task is added, a textview is displayed</p>
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-            <img src="img/code-placeholder.png" class=""/>
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-left items-center flex justify-center flex-col">
+            <code class="bg-gray-200 px-16 py-5 rounded-xl">
+                struct Task: Identifiable, Hashable { <br/>
+                    &emsp;&emsp;var id = UUID() <br/>
+                    &emsp;&emsp;var title: String <br/>
+                    &emsp;&emsp;var isCompleted: Bool <br/>
+                } <br/>
+            </code>
+            <p class="font-xs mt-2 text-gray-500">* copy+paste this code anywhere at the top of bottom of your code.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
             <p>Now let’s write the code to delete a task</p>
         </div>
 
-        <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-            <img src="img/code-placeholder.png" class=""/>
+        <div class="w-full max-w-xl p-5 bg-white font-semibold text-left items-center flex justify-center flex-col">
+            <code class="bg-gray-200 px-16 py-5 rounded-xl">
+                struct Task: Identifiable, Hashable { <br/>
+                    &emsp;&emsp;var id = UUID() <br/>
+                    &emsp;&emsp;var title: String <br/>
+                    &emsp;&emsp;var isCompleted: Bool <br/>
+                } <br/>
+            </code>
+            <p class="font-xs mt-2 text-gray-500">* copy+paste this code anywhere at the top of bottom of your code.</p>
         </div>
 
         <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-center">
             <p>Now let’s run this on simulator and device</p>
         </div>
 
-        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center">
+
+
+
+
+
+
+        <button class="font-bold py-2 px-4 rounded-full text-black bg-gray-200 flex items-center justify-center" id="openMoreAboutDevAccountBtn">
             <img src="img/plus.png" class="w-11 h-11"/>
             <span class="text-xl text-black">Setting up developer account</span>
         </button>
+
+        <div id="moreAboutDevAccountModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
+            <!-- Modal content -->
+            <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
+                <!-- Close button in the top left corner -->
+                <button class="close-dev-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
+        
+                <div class="grid grid-cols-1 gap-2 py-24">
+                    <div class="w-full max-w-xl p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
+                        <img src="img/code-placeholder.png" class=""/>
+                    </div>
+        
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Setting up an Apple Developer account to run your app on an actual device involves a few steps.</p>
+                    </div>
+                    
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>I'll break it down into simple terms for you:</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>1. Create an Apple ID: If you don't already have one, you'll need to create an Apple ID. This is your gateway to all things Apple. Go to the Apple ID website to sign up.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>2. Join the Apple Developer Program: To deploy apps to a device, you need to be a member of the Apple Developer Program. There's a yearly fee for this. Visit the Apple Developer website, sign in with your Apple ID, and follow the instructions to enroll..</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>3. Install Xcode: Xcode is the IDE (Integrated Development Environment) for developing Apple applications. Download it for free from the Mac App Store on your Mac.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>4. Open Your Project in Xcode: Launch Xcode and open the project you're working on.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>5. Sign In with Your Apple ID in Xcode: In Xcode, go to "Preferences" (Xcode menu > Preferences), then click the "Accounts" tab and sign in with your Apple ID.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>6. Create a Development Certificate: Xcode helps automate this. When you try to run your app on a device, Xcode will prompt you to fix issues related to provisioning profiles and certificates. Follow the on-screen instructions. This step involves Xcode creating a development certificate linked to your Apple Developer account, which is used to sign your apps.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>7. Register Your Device: Connect your device (iPhone, iPad, iPod Touch) to your Mac. In Xcode, select your device from the list of available devices next to the run button.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>8. Configure Your Project’s Signing: Select your project in the Navigator area, then select your target. Go to the "Signing & Capabilities" tab, and make sure your Apple Developer account is selected under "Team". Xcode should automatically manage signing and provisioning.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>9. Run Your App: With your device selected, hit the run button in Xcode. If everything is set up correctly, your app should build and then run on your device.</p>
+                    </div>
+
+                    <div class="w-full max-w-xl p-5 bg-white text-3xl font-semibold text-left">
+                        <p>Remember, you'll need a Mac to develop and deploy iOS applications with Xcode. These steps are simplified to give you an overview. Each step might require additional actions depending on your specific situation or changes in Apple's processes.</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
 
         <div class="flex justify-center">
             <hr class="my-8 w-1/2 border-gray-200 border-2" />
@@ -197,32 +562,7 @@
 
 
     
-    <div id="myModal" class="modal hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full">
-        <!-- Modal content -->
-        <div class="relative top-20 mx-auto p-5 border w-1/2 shadow-lg rounded-md bg-white  flex items-center justify-center">
-            <!-- Close button in the top left corner -->
-            <button class="close-button absolute top-0 left-0 m-4 text-4xl font-semibold text-gray-700 hover:text-gray-900 transition-colors duration-150 outline-none">&times;</button>
-    
-            <div class="grid grid-cols-1 gap-4 py-24">
-                <div class="w-full max-w-md p-5 bg-white font-semibold text-center items-center flex justify-center flex-col">
-                    <img src="img/code-placeholder.png" class=""/>
-                </div>
-    
-                <div class="w-full max-w-md p-5 bg-white text-3xl font-semibold text-center">
-                    <p>There are over 2 billion iOS devices out there in the world. Making an app that touches everyone is the most impactful thing you can do.</p>
-                </div>
-    
-                <div class="w-full max-w-md p-5 bg-white text-3xl font-semibold text-center">
-                    <p>This tutorial is designed to help you get started with making your own app in SwiftUI</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    
   
-
-
-
     <script src="script.js"></script>
 </body>
 </html>
